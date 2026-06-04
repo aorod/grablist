@@ -24,7 +24,7 @@ export function SubcategorySection({ subcategory, categoryId }) {
 
       {/* Cabeçalho das colunas (visível quando há itens OU form aberto) */}
       {showHeaders && (
-        <div className="flex items-center gap-2 px-2 mb-1 text-xs text-muted-foreground/60 select-none">
+        <div className="hidden md:flex items-center gap-2 px-2 mb-1 text-xs text-muted-foreground/60 select-none">
           <span className="flex-1">Produto</span>
           <span className="w-28 text-center">Qtd</span>
           <span className="w-28 text-center">Preço</span>

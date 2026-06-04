@@ -41,7 +41,7 @@ export function ProductModal({ product, category, initialQty = 1, initialUnitPri
           <h2 className="text-base font-bold text-gray-900 dark:text-gray-100">{product.name}</h2>
 
           {/* Campos */}
-          <div className="flex items-end gap-3">
+          <div className="flex flex-wrap items-end gap-3">
             <div className="space-y-1">
               <p className="text-xs text-muted-foreground">Qtd.</p>
               <QuantityInput value={qty} onChange={setQty} />

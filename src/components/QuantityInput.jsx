@@ -5,7 +5,7 @@ export function QuantityInput({ value, onChange, transparent = false }) {
   const dec = () => onChange(Math.max(0, parseFloat(value || 0) - 1))
   const inc = () => onChange(parseFloat(value || 0) + 1)
 
-  const base = 'flex items-center w-28 shrink-0 rounded-md overflow-hidden transition-colors'
+  const base = 'flex items-center w-24 sm:w-28 shrink-0 rounded-md overflow-hidden transition-colors'
   const style = transparent
     ? 'border border-transparent hover:border-input focus-within:border-input dark:hover:border-gray-600 dark:focus-within:border-gray-600'
     : 'border border-input dark:border-gray-600 bg-transparent dark:bg-gray-900'
