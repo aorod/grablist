@@ -55,7 +55,7 @@ export function ActionDialog({
                 onKeyDown={e => e.key === 'Enter' && handleConfirm()}
                 placeholder={inputPlaceholder}
                 autoFocus
-                className="w-full h-9 px-3 rounded-md border border-input dark:border-gray-600 bg-transparent text-sm outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 dark:bg-gray-800 transition-colors"
+                className="w-full h-11 lg:h-9 px-3 rounded-md border border-input dark:border-gray-600 bg-transparent text-sm outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 dark:bg-gray-800 transition-colors"
               />
             </div>
           )}

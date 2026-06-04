@@ -12,6 +12,23 @@ input[type='number'] {
   appearance: textfield;
 }
 
+/* Impede zoom automático ao focar inputs em iOS/Android (requer font-size >= 16px) */
+@media screen and (max-width: 1023px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Remove delay de 300ms e zoom duplo-toque em elementos interativos */
+button,
+a,
+input,
+[role="button"] {
+  touch-action: manipulation;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
